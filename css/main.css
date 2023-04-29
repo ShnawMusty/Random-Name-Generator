@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgba(30, 144, 255, 0.4);
+    background-image: url('../img/code.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0.75rem;
+}
+
+header, main {
+    background-color: rgba( 0, 0, 0, 0.4);
+    border: 1px solid #fff;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+header i {
+    font-size: 5rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main {
+    margin-top: 0.75rem;
+}
+
+section {
+    position: relative;
+}
+
+.submitForm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitForm input, .submitForm button {
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.submitForm input {
+    width: calc(100% - 60px);
+}
+
+.submitForm button {
+    min-width: 48px;
+    min-height: 48px;
+    background-color: limegreen;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.suggestion {
+    margin-top: 1.5rem;
+}
+
+.suggestion h2 {
+    padding-bottom: 1.25rem;
+}
+
+.suggestion a, .suggestion a:hover, .suggestion a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+ol {
+    margin-left: 1.5rem;
+    word-break: break-all;
+    font-size: 1.15rem;
+}
+
+ol > ul {
+    padding-bottom: 0.75rem;
+    margin-left: 1.25rem;
+}
+
+ul > li {
+    margin-top: 0.5rem;
+}
+
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    ol {
+        margin-left: 2rem;
+        font-size: 1.55rem;
+    }
+}
